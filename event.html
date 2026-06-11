@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Details | VibeZone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="booking-page">
+  <header class="site-header">
+    <div class="shell header-row">
+      <a class="logo" href="index.html">
+        <span class="logo-badge">VZ</span>
+        <span class="logo-text">Vibe<span>Zone</span></span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="events.html">Explore Events</a>
+        <a href="dashboard.html">Artist Dashboard</a>
+        <a href="bookings.html">My Bookings</a>
+      </nav>
+      <div class="header-actions">
+        <a class="login-link" href="login.html">Log in</a>
+        <a class="signup-button" href="signup.html">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="booking-main">
+    <div class="shell booking-shell">
+      <section class="event-detail-card">
+        <div class="event-detail-banner" id="event-detail-banner"></div>
+        <div class="event-detail-content">
+          <div class="event-detail-copy">
+            <p class="booking-label" id="event-detail-category">Featured Event</p>
+            <h1 id="event-detail-title">Event title</h1>
+            <p class="booking-summary-note" id="event-detail-description">Event description</p>
+            <div class="booking-meta-line detail-meta-line">
+              <span id="event-detail-date">-</span>
+              <span id="event-detail-time">-</span>
+              <span id="event-detail-city">-</span>
+            </div>
+            <div class="event-detail-stats">
+              <article>
+                <span>Audience Rating</span>
+                <strong id="event-detail-rating">4.8</strong>
+              </article>
+              <article>
+                <span>Reviews</span>
+                <strong id="event-detail-review-count">0</strong>
+              </article>
+              <article>
+                <span>Remaining Tickets</span>
+                <strong id="event-detail-remaining-copy">-</strong>
+              </article>
+            </div>
+            <section class="event-detail-section">
+              <div class="section-head-inline">
+                <h3>Lineup</h3>
+                <span class="event-inline-badge" id="event-detail-popularity">Trending</span>
+              </div>
+              <div class="event-pill-row" id="event-detail-lineup"></div>
+            </section>
+            <section class="event-detail-section">
+              <h3>Audience Reviews</h3>
+              <div class="review-stack" id="event-detail-reviews"></div>
+            </section>
+          </div>
+
+          <aside class="booking-summary-card detail-side-card">
+            <h2>Event Summary</h2>
+            <div class="booking-summary-list">
+              <div><span>Artist / Venue</span><strong id="event-detail-artist">-</strong></div>
+              <div><span>Category</span><strong id="event-detail-category-summary">-</strong></div>
+              <div><span>Price</span><strong id="event-detail-price">₹0</strong></div>
+              <div><span>Status</span><strong id="event-detail-status">Available</strong></div>
+              <div><span>Remaining</span><strong id="event-detail-remaining">-</strong></div>
+            </div>
+            <div class="detail-actions-block">
+              <button class="cancel-button favorite-button" id="event-detail-favorite" type="button">♡ Save</button>
+              <a class="auth-submit detail-book-button" id="event-detail-book-button" href="booking.html">Book Tickets</a>
+              <a class="cancel-button" href="events.html">Back to Explore</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

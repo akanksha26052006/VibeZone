@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Gateway | VibeZone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="booking-page">
+  <header class="site-header">
+    <div class="shell header-row">
+      <a class="logo" href="index.html">
+        <span class="logo-badge">VZ</span>
+        <span class="logo-text">Vibe<span>Zone</span></span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="events.html">Explore Events</a>
+        <a href="dashboard.html">Artist Dashboard</a>
+        <a href="bookings.html">My Bookings</a>
+      </nav>
+      <div class="header-actions">
+        <a class="login-link" href="login.html">Log in</a>
+        <a class="signup-button" href="signup.html">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="booking-main">
+    <div class="shell booking-shell">
+      <div class="booking-layout">
+        <form class="booking-card-form" id="payment-form">
+          <div class="booking-header">
+            <p class="booking-label">Payment gateway</p>
+            <h1>Choose payment method</h1>
+            <p id="payment-subtitle">Complete payment to confirm your booking.</p>
+          </div>
+
+          <div class="payment-options">
+            <label class="payment-option">
+              <input type="radio" name="payment-method" value="UPI" checked>
+              <span class="payment-option-icon">📱</span>
+              <span>UPI</span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment-method" value="Credit Card">
+              <span class="payment-option-icon">💳</span>
+              <span>Credit Card</span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment-method" value="Debit Card">
+              <span class="payment-option-icon">🏦</span>
+              <span>Debit Card</span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment-method" value="Net Banking">
+              <span class="payment-option-icon">🖥️</span>
+              <span>Net Banking</span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment-method" value="Wallet">
+              <span class="payment-option-icon">👛</span>
+              <span>Wallet</span>
+            </label>
+          </div>
+
+          <label>
+            <span>Payment detail</span>
+            <input id="payment-detail" type="text" placeholder="Enter UPI ID or card info" required>
+          </label>
+
+          <button class="auth-submit" id="payment-submit" type="submit">Pay Now</button>
+        </form>
+
+        <aside class="booking-summary-card">
+          <h2>Payment Summary</h2>
+          <div class="booking-summary-list">
+            <div><span>Event</span><strong id="payment-event">-</strong></div>
+            <div><span>Tickets</span><strong id="payment-tickets">-</strong></div>
+            <div><span>Name</span><strong id="payment-name">-</strong></div>
+            <div><span>Email</span><strong id="payment-email">-</strong></div>
+            <div><span>Total</span><strong id="payment-total">₹0</strong></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

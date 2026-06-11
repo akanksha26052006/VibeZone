@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VibeZone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home-page">
+  <header class="site-header">
+    <div class="shell header-row">
+      <a class="logo" href="index.html">
+        <span class="logo-badge">VZ</span>
+        <span class="logo-text">Vibe<span>Zone</span></span>
+      </a>
+
+      <nav class="main-nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="events.html">Explore Events</a>
+        <a href="dashboard.html">Artist Dashboard</a>
+        <a href="bookings.html">My Bookings</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="login-link" href="login.html">Log in</a>
+        <a class="signup-button" href="signup.html">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="shell hero-content">
+        <div class="hero-pill">✨ Discover emerging & top artists</div>
+        <h1>Feel the <span>Vibe.</span><br>Live the Moment.</h1>
+        <p>
+          Discover concerts, festivals, comedy shows, and more. Book
+          tickets to unforgettable live experiences.
+        </p>
+
+        <form class="hero-search" id="home-search-form">
+          <span class="search-icon">⌕</span>
+          <input id="home-search-input" type="text" placeholder="Search events, artists, or cities...">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="shell">
+        <h2 class="section-title">Browse Categories</h2>
+        <div class="category-grid">
+          <article class="category-card" data-home-category="Concerts">
+            <div class="category-icon">🎵</div>
+            <h3>Concerts</h3>
+            <!-- <p>124 events</p> -->
+          </article>
+          <article class="category-card" data-home-category="Comedy">
+            <div class="category-icon">😂</div>
+            <h3>Comedy</h3>
+            <!-- <p>56 events</p> -->
+          </article>
+          <article class="category-card" data-home-category="Theatre">
+            <div class="category-icon">🎭</div>
+            <h3>Theatre</h3>
+            <!-- <p>38 events</p> -->
+          </article>
+          <article class="category-card" data-home-category="Music Festivals">
+            <div class="category-icon">🎪</div>
+            <h3>Music Festivals</h3>
+            <!-- <p>22 events</p> -->
+          </article>
+          <article class="category-card" data-home-category="Workshops">
+            <div class="category-icon">🎨</div>
+            <h3>Workshops</h3>
+            <!-- <p>45 events</p> -->
+          </article>
+          <article class="category-card" data-home-category="DJ Nights">
+            <div class="category-icon">🎧</div>
+            <h3>DJ Nights</h3>
+            <!-- <p>67 events</p> -->
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="shell">
+        <div class="section-head">
+          <h2 class="section-title">Featured Events</h2>
+          <a href="events.html" class="view-link">View all →</a>
+        </div>
+
+        <div class="event-grid">
+          <article class="event-card large-glow" data-home-event-id="neon-pulse-festival">
+            <div class="event-image event-image-one">
+              <div class="card-top-tags">
+                <span class="orange-tag">Music Festivals</span>
+                <span class="yellow-tag">🔥 Trending</span>
+              </div>
+            </div>
+            <div class="event-copy">
+              <h3>Neon Pulse Festival</h3>
+              <p class="artist-name">Various Artists</p>
+              <div class="event-meta-row">
+                <span>🗓 Apr 15, 2026</span>
+                <span>◔ 18:00</span>
+              </div>
+              <div class="event-bottom-row">
+                <span>📍 Delhi</span>
+                <strong>₹1890</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card" data-home-event-id="jazz-under-the-stars">
+            <div class="event-image event-image-two">
+              <div class="card-top-tags">
+                <span class="orange-tag">Concerts</span>
+              </div>
+            </div>
+            <div class="event-copy">
+              <h3>Jazz Under The Stars</h3>
+              <p class="artist-name">Maya Johnson Quartet</p>
+              <div class="event-meta-row">
+                <span>🗓 Mar 28, 2026</span>
+                <span>◔ 20:00</span>
+              </div>
+              <div class="event-bottom-row">
+                <span>📍 Mumbai</span>
+                <strong>₹1290</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card" data-home-event-id="electric-dreams-tour">
+            <div class="event-image event-image-three">
+              <div class="card-top-tags">
+                <span class="orange-tag">Concerts</span>
+                <span class="yellow-tag">🔥 Trending</span>
+              </div>
+            </div>
+            <div class="event-copy">
+              <h3>Electric Dreams Tour</h3>
+              <p class="artist-name">Synthwave Collective</p>
+              <div class="event-meta-row">
+                <span>🗓 Apr 20, 2026</span>
+                <span>◔ 19:30</span>
+              </div>
+              <div class="event-bottom-row">
+                <span>📍 Hyderabad</span>
+                <strong>₹1590</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card" data-home-event-id="acoustic-sunrise">
+            <div class="event-image event-image-four">
+              <div class="card-top-tags">
+                <span class="orange-tag">Concerts</span>
+              </div>
+            </div>
+            <div class="event-copy">
+              <h3>Acoustic Sunrise</h3>
+              <p class="artist-name">Indie Folk Trio</p>
+              <div class="event-meta-row">
+                <span>🗓 Apr 5, 2026</span>
+                <span>◔ 07:00</span>
+              </div>
+              <div class="event-bottom-row">
+                <span>📍 Goa</span>
+                <strong>₹590</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block footer-top-border">
+      <div class="shell">
+        <div class="section-head">
+          <h2 class="section-title with-fire">Trending Now</h2>
+          <a href="events.html" class="view-link">View all →</a>
+        </div>
+
+        <div class="event-grid">
+          <article class="event-card" data-home-event-id="neon-pulse-festival">
+            <div class="event-image event-image-one">
+              <div class="card-top-tags">
+                <span class="orange-tag">Music Festivals</span>
+                <span class="yellow-tag">🔥 Trending</span>
+              </div>
+            </div>
+            <div class="event-copy">
+              <h3>Neon Pulse Festival</h3>
+              <p class="artist-name">Various Artists</p>
+              <div class="event-meta-row">
+                <span>🗓 Apr 15, 2026</span>
+                <span>◔ 18:00</span>
+              </div>
+              <div class="event-bottom-row">
+                <span>📍 Delhi</span>
+                <strong>₹1890</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card" data-home-event-id="stand-up-showdown">
+            <div class="event-image event-image-five">
+              <div class="card-top-tags">
+                <span class="orange-tag">Comedy</span>
+                <span class="yellow-tag">🔥 Trending</span>
+              </div>
+            </div>
+            <div class="event-copy">
+              <h3>Stand-Up Showdown</h3>
+              <p class="artist-name">Multiple Comedians</p>
+              <div class="event-meta-row">
+                <span>🗓 Apr 2, 2026</span>
+                <span>◔ 21:00</span>
+              </div>
+              <div class="event-bottom-row">
+                <span>📍 Bengaluru</span>
+                <strong>₹790</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card" data-home-event-id="electric-dreams-tour">
+            <div class="event-image event-image-three">
+              <div class="card-top-tags">
+                <span class="orange-tag">Concerts</span>
+                <span class="yellow-tag">🔥 Trending</span>
+              </div>
+            </div>
+            <div class="event-copy">
+              <h3>Electric Dreams Tour</h3>
+              <p class="artist-name">Synthwave Collective</p>
+              <div class="event-meta-row">
+                <span>🗓 Apr 20, 2026</span>
+                <span>◔ 19:30</span>
+              </div>
+              <div class="event-bottom-row">
+                <span>📍 Hyderabad</span>
+                <strong>₹1590</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card" data-home-event-id="beat-drop-sessions">
+            <div class="event-image event-image-six">
+              <div class="card-top-tags">
+                <span class="orange-tag">DJ Nights</span>
+                <span class="yellow-tag">🔥 Trending</span>
+              </div>
+            </div>
+            <div class="event-copy">
+              <h3>Beat Drop Sessions</h3>
+              <p class="artist-name">DJ Nexus</p>
+              <div class="event-meta-row">
+                <span>🗓 Mar 22, 2026</span>
+                <span>◔ 22:00</span>
+              </div>
+              <div class="event-bottom-row">
+                <span>📍 Mumbai</span>
+                <strong>₹1290</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer-home">
+    <div class="shell footer-grid">
+      <div>
+        <a class="logo footer-logo" href="index.html">
+          <span class="logo-badge">VZ</span>
+          <span class="logo-text">Vibe<span>Zone</span></span>
+        </a>
+        <p class="footer-description">
+          Discover live events, support emerging artists,
+          and book unforgettable experiences.
+        </p>
+      </div>
+
+      <div>
+        <h4>Discover</h4>
+        <a href="events.html">All Events</a>
+        <a href="events.html">Concerts</a>
+        <a href="events.html">Comedy</a>
+        <a href="events.html">Theatre</a>
+      </div>
+
+      <div>
+        <h4>For Artists</h4>
+        <a href="dashboard.html">Artist Dashboard</a>
+        <a href="signup.html">Create Account</a>
+      </div>
+
+      <div>
+        <h4>Support</h4>
+        <a href="#">Help Center</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+
+    <div class="shell footer-bottom">
+      <p>© 2026 VibeZone. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

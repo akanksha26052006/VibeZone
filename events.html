@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Events | VibeZone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="explore-page">
+  <header class="site-header">
+    <div class="shell header-row">
+      <a class="logo" href="index.html">
+        <span class="logo-badge">VZ</span>
+        <span class="logo-text">Vibe<span>Zone</span></span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a class="active" href="events.html">Explore Events</a>
+        <a href="dashboard.html">Artist Dashboard</a>
+        <a href="bookings.html">My Bookings</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="login-link" href="login.html">Log in</a>
+        <a class="signup-button" href="signup.html">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="explore-main">
+    <section class="explore-hero">
+      <div class="shell">
+        <h1 class="explore-title">Explore Events</h1>
+        <p class="explore-subtitle">Find your next unforgettable experience</p>
+
+        <div class="explore-search-row">
+          <form class="explore-search" id="explore-search-form">
+            <span class="search-icon">⌕</span>
+            <input id="explore-search-input" type="text" placeholder="Search events, artists, cities...">
+          </form>
+          <button class="filter-button" id="explore-filter-toggle" type="button">
+            <span class="filter-icon">☷</span>
+            <span>Filters</span>
+          </button>
+        </div>
+
+        <div class="explore-filter-panel" id="explore-filter-panel" hidden>
+          <label>
+            <span>City</span>
+            <select id="explore-city-filter">
+              <option value="">All cities</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Bengaluru">Bengaluru</option>
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="Goa">Goa</option>
+              <option value="Kolkata">Kolkata</option>
+              <option value="Pune">Pune</option>
+              <option value="Jaipur">Jaipur</option>
+            </select>
+          </label>
+          <label>
+            <span>Max price</span>
+            <input id="explore-price-filter" type="number" min="0" placeholder="e.g. 1500">
+          </label>
+          <label>
+            <span>Date</span>
+            <input id="explore-date-filter" type="text" placeholder="Apr 20, 2026">
+          </label>
+          <label class="explore-check">
+            <input id="explore-available-filter" type="checkbox">
+            <span>Available only</span>
+          </label>
+          <button class="cancel-button filter-reset-button" id="explore-filter-reset" type="button">Clear</button>
+        </div>
+
+        <div class="explore-chip-row" id="explore-chip-row">
+          <button class="explore-chip active" type="button" data-category="All">All</button>
+          <button class="explore-chip" type="button" data-category="Concerts">Concerts</button>
+          <button class="explore-chip" type="button" data-category="Comedy">Comedy</button>
+          <button class="explore-chip" type="button" data-category="Theatre">Theatre</button>
+          <button class="explore-chip" type="button" data-category="Music Festivals">Music Festivals</button>
+          <button class="explore-chip" type="button" data-category="Workshops">Workshops</button>
+          <button class="explore-chip" type="button" data-category="DJ Nights">DJ Nights</button>
+        </div>
+
+        <p class="results-count" id="explore-results-count">12 events found</p>
+      </div>
+    </section>
+
+    <section class="explore-grid-wrap">
+      <div class="shell">
+        <div class="event-grid" id="explore-event-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer-home">
+    <div class="shell footer-grid">
+      <div>
+        <a class="logo footer-logo" href="index.html">
+          <span class="logo-badge">VZ</span>
+          <span class="logo-text">Vibe<span>Zone</span></span>
+        </a>
+        <p class="footer-description">
+          Discover live events, support emerging artists,
+          and book unforgettable experiences.
+        </p>
+      </div>
+
+      <div>
+        <h4>Discover</h4>
+        <a href="events.html">All Events</a>
+        <a href="events.html">Concerts</a>
+        <a href="events.html">Comedy</a>
+        <a href="events.html">Theatre</a>
+      </div>
+
+      <div>
+        <h4>For Artists</h4>
+        <a href="dashboard.html">Artist Dashboard</a>
+        <a href="signup.html">Create Account</a>
+      </div>
+
+      <div>
+        <h4>Support</h4>
+        <a href="#">Help Center</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+
+    <div class="shell footer-bottom">
+      <p>&copy; 2026 VibeZone. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

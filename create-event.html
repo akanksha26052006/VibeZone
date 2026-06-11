@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Event | VibeZone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="explore-page create-event-page">
+  <header class="site-header">
+    <div class="shell header-row">
+      <a class="logo" href="index.html">
+        <span class="logo-badge">VZ</span>
+        <span class="logo-text">Vibe<span>Zone</span></span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="events.html">Explore Events</a>
+        <a class="active" href="dashboard.html">Artist Dashboard</a>
+        <a href="bookings.html">My Bookings</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="login-link" href="login.html">Log in</a>
+        <a class="signup-button" href="signup.html">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="create-event-main">
+    <div class="shell">
+      <section class="create-event-card">
+        <h1>New Event</h1>
+
+        <form class="create-event-form" id="create-event-form">
+          <div class="create-event-grid">
+            <label>
+              <span>Event Title</span>
+              <input id="event-title" type="text" required>
+            </label>
+
+            <label>
+              <span>Category</span>
+              <select id="event-category">
+                <option>Concerts</option>
+                <option>Comedy</option>
+                <option>Theatre</option>
+                <option>Music Festivals</option>
+                <option>Workshops</option>
+                <option>DJ Nights</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Date</span>
+              <input id="event-date" type="text" placeholder="dd-mm-yyyy" required>
+            </label>
+
+            <label>
+              <span>Time</span>
+              <input id="event-time" type="text" placeholder="--:--" required>
+            </label>
+
+            <label>
+              <span>Venue</span>
+              <input id="event-venue" type="text" required>
+            </label>
+
+            <label>
+              <span>City</span>
+              <input id="event-city" type="text" required>
+            </label>
+
+            <label>
+              <span>Ticket Price (₹)</span>
+              <input id="event-price" type="text" required>
+            </label>
+
+            <label>
+              <span>Total Tickets</span>
+              <input id="event-total-tickets" type="text" required>
+            </label>
+          </div>
+
+          <label class="create-event-textarea">
+            <span>Description</span>
+            <textarea id="event-description"></textarea>
+          </label>
+
+          <label class="create-event-textarea">
+            <span>Poster Upload</span>
+            <input id="event-poster" type="file" accept="image/*">
+          </label>
+
+          <div class="poster-preview" id="poster-preview">
+            <span>Poster preview will appear here</span>
+          </div>
+
+          <div class="create-event-actions">
+            <button class="auth-submit create-button" id="create-event-submit" type="submit">Create Event</button>
+            <a class="cancel-button" href="dashboard.html">Cancel</a>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

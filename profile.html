@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | VibeZone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-page">
+  <header class="site-header">
+    <div class="shell header-row">
+      <a class="logo" href="index.html">
+        <span class="logo-badge">VZ</span>
+        <span class="logo-text">Vibe<span>Zone</span></span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="events.html">Explore Events</a>
+        <a href="dashboard.html">Artist Dashboard</a>
+        <a href="bookings.html">My Bookings</a>
+      </nav>
+      <div class="header-actions">
+        <a class="login-link" href="login.html">Log in</a>
+        <a class="signup-button" href="signup.html">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="dashboard-main">
+    <div class="shell profile-shell">
+      <section class="profile-hero-card">
+        <div class="profile-hero-avatar" id="profile-hero-avatar">V</div>
+        <div>
+          <h1 class="dashboard-title" id="profile-name">Your Profile</h1>
+          <p class="dashboard-subtitle" id="profile-email">email@example.com</p>
+        </div>
+      </section>
+
+      <section class="profile-editor-card">
+        <div class="section-head-inline">
+          <h2>Edit Profile</h2>
+          <span class="event-inline-badge">Live update</span>
+        </div>
+        <form class="profile-form" id="profile-form">
+          <label>
+            <span>Full Name</span>
+            <input id="profile-form-name" type="text" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input id="profile-form-email" type="email" required>
+          </label>
+          <div class="create-event-actions profile-form-actions">
+            <button class="auth-submit create-button" type="submit">Save Profile</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="dashboard-shot-stats profile-stats">
+        <article class="dashboard-shot-card">
+          <span>Wishlist</span>
+          <strong id="profile-favorites-count">0</strong>
+        </article>
+        <article class="dashboard-shot-card">
+          <span>Bookings</span>
+          <strong id="profile-bookings-count">0</strong>
+        </article>
+        <article class="dashboard-shot-card">
+          <span>Confirmed</span>
+          <strong id="profile-confirmed-count">0</strong>
+        </article>
+        <article class="dashboard-shot-card">
+          <span>Cancelled</span>
+          <strong id="profile-cancelled-count">0</strong>
+        </article>
+      </section>
+
+      <section class="dashboard-events">
+        <h2>Your Wishlist</h2>
+        <div class="event-grid profile-favorites-grid" id="profile-favorites-grid"></div>
+        <p class="dashboard-empty-state" id="profile-favorites-empty" hidden>No saved events yet.</p>
+      </section>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

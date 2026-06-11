@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up | VibeZone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-page">
+  <header class="site-header">
+    <div class="shell header-row">
+      <a class="logo" href="index.html">
+        <span class="logo-badge">VZ</span>
+        <span class="logo-text">Vibe<span>Zone</span></span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="events.html">Explore Events</a>
+        <a href="dashboard.html">Artist Dashboard</a>
+        <a href="bookings.html">My Bookings</a>
+      </nav>
+      <div class="header-actions">
+        <a class="login-link" href="login.html">Log in</a>
+        <a class="signup-button" href="signup.html">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="auth-main">
+    <section class="auth-center">
+      <div class="auth-icon">VZ</div>
+      <h1>Join VibeZone</h1>
+      <p>Create your account and start vibing</p>
+
+      <form class="auth-card-form signup-card-form" id="signup-form">
+        <label>
+          <span>Full Name</span>
+          <input id="signup-name" type="text" placeholder="Your name" required>
+        </label>
+
+        <label>
+          <span>Email</span>
+          <input id="signup-email" type="email" placeholder="you@gmail.com" pattern="[a-zA-Z0-9._%+-]+@gmail\.com" title="Please enter a valid Gmail address" required>
+        </label>
+
+        <label>
+          <span>Password</span>
+          <div class="password-wrap">
+            <input id="signup-password" type="password" placeholder="Min. 6 characters" required>
+            <button type="button" class="eye-button">&#9673;</button>
+          </div>
+        </label>
+
+        <button class="auth-submit" type="submit">Create Account</button>
+      </form>
+
+      <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

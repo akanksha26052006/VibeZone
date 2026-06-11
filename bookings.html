@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Bookings | VibeZone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bookings-page">
+  <header class="site-header">
+    <div class="shell header-row">
+      <a class="logo" href="index.html">
+        <span class="logo-badge">VZ</span>
+        <span class="logo-text">Vibe<span>Zone</span></span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="events.html">Explore Events</a>
+        <a href="dashboard.html">Artist Dashboard</a>
+        <a class="active" href="bookings.html">My Bookings</a>
+      </nav>
+      <div class="header-actions">
+        <a class="login-link" href="login.html">Log in</a>
+        <a class="signup-button" href="signup.html">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="bookings-main">
+    <section class="bookings-section">
+      <div class="bookings-shell">
+        <h1 class="bookings-title">My Bookings</h1>
+        <p class="bookings-subtitle">Your upcoming events and booking history</p>
+        <div class="booking-confirm-banner" id="booking-confirm-banner" hidden>
+          Booking confirmed. Your ticket is ready.
+        </div>
+        <div class="bookings-list" id="bookings-list"></div>
+        <p class="bookings-empty-state" id="bookings-empty-state" hidden>No bookings yet. Explore events and book one.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer-home dashboard-footer">
+    <div class="shell footer-grid">
+      <div>
+        <a class="logo footer-logo" href="index.html">
+          <span class="logo-badge">VZ</span>
+          <span class="logo-text">Vibe<span>Zone</span></span>
+        </a>
+        <p class="footer-description">
+          Discover live events, support emerging artists,
+          and book unforgettable experiences.
+        </p>
+      </div>
+      <div>
+        <h4>Discover</h4>
+        <a href="events.html">All Events</a>
+        <a href="events.html">Concerts</a>
+        <a href="events.html">Comedy</a>
+        <a href="events.html">Theatre</a>
+      </div>
+      <div>
+        <h4>For Artists</h4>
+        <a href="dashboard.html">Artist Dashboard</a>
+        <a href="signup.html">Create Account</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="#">Help Center</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+
+    <div class="shell footer-bottom">
+      <p>&copy; 2026 VibeZone. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
